@@ -8,7 +8,7 @@ function arrCreator(n) {
 }
 
 function div(num1, num2, num3) {
-    if (num1 % num2 == 0 && num1 % num3 == 0) {
+    if (num1 % num2 === 0 && num1 % num3 === 0) {
         return true;
     }
     else {
@@ -17,9 +17,8 @@ function div(num1, num2, num3) {
 }
 
 function capitalize(str) {
-    const Str = str.charAt(0).toUpperCase() + str.slice(1);
-    console.log(Str + "\n");
-    return Str;
+    const capFirstLetter = str.charAt(0).toUpperCase() + str.slice(1);
+    return capFirstLetter;
 }
 
 const a = arrCreator(6);
@@ -27,3 +26,4 @@ console.log(a);
 const b = div(3, 2, 1);
 console.log(b);
 const c = capitalize("honda");
+console.log(c);
